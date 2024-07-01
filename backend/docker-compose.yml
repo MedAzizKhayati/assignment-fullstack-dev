@@ -1,0 +1,15 @@
+# see https://docs.docker.com/compose/compose-file/compose-versioning/
+version: "3.8" # specify docker-compose version
+
+services:
+  postgres:
+    image: postgres:${POSTGRES_VERSION:-15}-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-bookdb}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+    volumes:
+      - ./data/bookdb:/var/lib/postgresql/data:rw
+      - ./pg-initdb.d:/docker-entrypoint-initdb.d
