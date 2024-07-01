@@ -1,8 +1,9 @@
-# Library Management System
+[screen-capture.webm](https://github.com/MedAzizKhayati/assignment-fullstack-dev/assets/68187294/5cc56334-a1a4-4641-8878-a03e5f9b655d)# Library Management System
 
 This assignment aims to assess your fullstack development skills. This will simulate a basic library management system. You will build both the backend (PHP with Symfony + DB schema) and frontend (React) functionalities.
 
 ## Demo
+[screen-capture.webm](https://github.com/MedAzizKhayati/assignment-fullstack-dev/assets/68187294/2ac96e42-8c3b-421f-903b-95770f6a8395)
 
 <!-- TODO: Add video demo link here -->
 
